@@ -107,7 +107,7 @@ FraudDetection/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/fraud-detection.git
+git clone https://github.com/kizamehoshigaki/fraud-detection.git
 cd fraud-detection
 ```
 
@@ -131,8 +131,13 @@ streamlit run app.py
 
 ### 5. Access the Application
 
-- **Dashboard**: http://localhost:8501
-- **API Docs**: http://localhost:8000/docs
+## 🚀 Live Demo
+
+👉 **[Try the Live App](https://fraud-detection-oczzdzgzbt4gkijwxuzpx3.streamlit.app)**
+
+No installation required — test the fraud detection system directly in your browser!
+
+---
 
 ---
 
@@ -275,8 +280,8 @@ How each feature value affects the fraud prediction:
 **Aaditya Krishna**  
 MS Data Analytics Engineering, Northeastern University  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/yourprofile)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/yourprofile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/aaditya-krishna-516118227/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/kizamehoshigaki)
 
 ---
 
@@ -290,4 +295,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - IEEE Computational Intelligence Society
 - Vesta Corporation (dataset provider)
+
 - Kaggle community
