@@ -1,0 +1,32 @@
+{
+    "model_type": "LightGBM",
+    "optimal_threshold": 0.10,
+    "training_date": "2025-01-05",
+    "dataset": "IEEE-CIS Fraud Detection",
+    "performance": {
+        "test_roc_auc": 0.9658,
+        "test_pr_auc": 0.8355,
+        "test_precision": 0.5268,
+        "test_recall": 0.8351,
+        "test_f1": 0.6460,
+        "business_cost": 313625,
+        "baseline_cost": 752325,
+        "cost_reduction_pct": 58.3
+    },
+    "business_costs": {
+        "false_negative": 500,
+        "false_positive": 25
+    },
+    "confusion_matrix": {
+        "true_negatives": 83157,
+        "false_positives": 2325,
+        "false_negatives": 511,
+        "true_positives": 2588
+    },
+    "training_info": {
+        "total_samples": 590540,
+        "fraud_rate": 0.035,
+        "features_used": 426,
+        "training_time_seconds": 17.0
+    }
+}

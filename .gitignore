@@ -1,0 +1,82 @@
+# =============================================================================
+# FRAUD DETECTION PROJECT - .gitignore
+# =============================================================================
+
+# --- Data Files (too large for GitHub) ---
+data/*.csv
+data/*.pkl
+data/*.parquet
+*.csv
+*.pkl
+*.parquet
+
+# --- Model Files (optional - can include if < 100MB) ---
+# Uncomment below if models are too large
+# models/*.joblib
+# *.joblib
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Virtual Environment ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Environment Variables ---
+.env
+.env.local
+.env.*.local
+
+# --- Temporary Files ---
+tmp/
+temp/
+*.tmp
+*.temp
