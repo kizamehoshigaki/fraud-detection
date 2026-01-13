@@ -37,6 +37,50 @@ This project implements an end-to-end fraud detection pipeline using the **IEEE-
 
 ![Model Comparison](model_comparison_summary.png)
 
+## 🔬 Evaluation & Data Integrity
+
+### Confusion Matrix (Threshold = 0.10)
+
+|  | Predicted Legitimate | Predicted Fraud |
+|--|---------------------|-----------------|
+| **Actual Legitimate** | 83,157 (TN) | 2,325 (FP) |
+| **Actual Fraud** | 511 (FN) | 2,588 (TP) |
+
+### Data Split Strategy
+
+- **Split Ratio:** 70% Train / 15% Validation / 15% Test (stratified)
+- **No Data Leakage:** Scaler fitted on training data only, then applied to validation and test sets
+- **Time-aware:** Features engineered before splitting to prevent look-ahead bias
+
+### Metrics at Chosen Threshold (0.10)
+
+| Metric | Value |
+|--------|-------|
+| ROC-AUC | 0.9658 |
+| PR-AUC | 0.8355 |
+| Precision | 52.68% |
+| Recall | 83.51% |
+| F1 Score | 0.6460 |
+
+---
+
+## 📊 Production Monitoring Plan
+
+| Component | Method | Frequency |
+|-----------|--------|-----------|
+| **Data Drift** | Population Stability Index (PSI) on key features | Weekly |
+| **Model Performance** | Track ROC-AUC on newly labeled transactions | Monthly |
+| **Prediction Drift** | Monitor fraud rate predictions vs actuals | Daily |
+| **Retraining Trigger** | If ROC-AUC drops >5% or fraud patterns shift | As needed |
+
+### Alert Thresholds
+
+| Condition | Action |
+|-----------|--------|
+| Fraud rate changes >20% | Investigate data quality |
+| Precision drops below 40% | Review false positive patterns |
+| Recall drops below 75% | Urgent model review |
+
 ### Business Impact
 
 | Metric | Value |
@@ -297,3 +341,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Vesta Corporation (dataset provider)
 
 - Kaggle community
+
